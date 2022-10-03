@@ -22,6 +22,11 @@ checksums=('SKIP')
 
 backup=('/etc/itd.toml')
 
+version() {
+	cd "$srcdir/itd"
+	printf "r%s.%s" "$(git rev-list --count HEAD)" "$(git rev-parse --short HEAD)"
+}
+
 build() {
 	cd "$srcdir/itd"
 	make
