@@ -4,7 +4,7 @@ release=1
 desc='Companion daemon for the InfiniTime firmware on the PineTime smartwatch'
 homepage='https://gitea.arsenm.dev/Arsen6331/itd'
 architectures=('amd64' 'aarch64' 'arm7' 'arm6' '386')
-license=('GPLv3')
+license=('GPL-3.0-or-later')
 provides=('itd' 'itctl')
 conflicts=('itd' 'itctl')
 
