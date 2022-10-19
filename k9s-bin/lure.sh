@@ -4,7 +4,7 @@ release=1
 desc='TUI for managing Kubernetes clusters and pods'
 homepage='https://github.com/derailed/k9s'
 architectures=('amd64')
-license=('APACHE')
+license=('Apache-2.0')
 provides=('k9s')
 
 sources_amd64=("https://github.com/derailed/k9s/releases/download/v0.26.6/k9s_Linux_x86_64.tar.gz")
