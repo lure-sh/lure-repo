@@ -1,2 +1,2 @@
 #!/bin/sh
-exec /bin/electron18 /usr/lib/obsidian/app.asar "$@"
+exec ~/.npm/electron/dist/electron /usr/lib/obsidian/app.asar "$@"
