@@ -11,7 +11,7 @@ conflicts=('obsidian')
 deps_amd64=('zlib' 'hicolor-icon-theme' 'fuse3')
 build_deps=('npm')
 
-sources_amd64=("https://github.com/obsidianmd/obsidian-releases/releases/download/v${version}/obsidian-${version}.tar.gz")
+sources_amd64=("https://github.com/obsidianmd/obsidian-releases/releases/download/v${version}/${name}-${version}.tar.gz")
 checksums_amd64=('1f50a5f52073fe6c0df207b3164715e0ac48efec558d057602dc8b2b28d5a48f')
 
 prepare() {
