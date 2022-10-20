@@ -8,7 +8,7 @@ license=('custom:Commercial')
 provides=('obsidian')
 conflicts=('obsidian')
 
-deps=('zlib' 'hicolor-icon-theme' 'fuse3')
+deps_amd64=('zlib' 'hicolor-icon-theme' 'fuse3')
 build_deps=('npm')
 
 sources_amd64=("https://github.com/obsidianmd/obsidian-releases/releases/download/v${version}/obsidian-${version}.tar.gz")
