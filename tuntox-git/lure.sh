@@ -20,16 +20,16 @@ sources=('git+https://github.com/gjedeer/tuntox.git')
 checksums=('SKIP')
 
 version() {
-cd "$srcdir/tuntox"
-printf "r%s.%s" "$(git rev-list --count HEAD)" "$(git rev-parse --short HEAD)"
+  cd "$srcdir/tuntox"
+  printf "r%s.%s" "$(git rev-list --count HEAD)" "$(git rev-parse --short HEAD)"
 }
 
 build() {
-cd "$srcdir/tuntox"
-make tuntox_nostatic
+  cd "$srcdir/tuntox"
+  make tuntox_nostatic
 }
 
 package() {
-cd "$srcdir/tuntox"
-make DESTDIR="${pkgdir}" install
+  cd "$srcdir/tuntox"
+  make DESTDIR="${pkgdir}" install
 }
