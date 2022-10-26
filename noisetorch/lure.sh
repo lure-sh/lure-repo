@@ -28,4 +28,3 @@ package() {
      	install -Dm644 "${srcdir}/NoiseTorch/assets/noisetorch.desktop" "${pkgdir}/usr/share/applications/noisetorch.desktop"
 	    install -Dm644 "${srcdir}/NoiseTorch/assets/icon/noisetorch.png" "${pkgdir}/usr/share/icons/hicolor/256x256/apps/noisetorch.png"
 }
-c
