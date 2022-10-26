@@ -10,6 +10,6 @@ jobs:
       - name: Run shfmt
         uses: reviewdog/action-shfmt@v1
         with:
-          github_token: ${{ secrets.github_token }}
+          github_token: ${{ github.token }}
           level: warning
           reviewdog_flags: -reporter github-pr-review
