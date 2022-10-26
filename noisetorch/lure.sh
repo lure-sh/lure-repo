@@ -15,16 +15,16 @@ sources_amd64=("git+https://github.com/noisetorch/NoiseTorch.git#tag=v${version}
 checksums_amd64=('SKIP')
 
 prepare() {
-	cd "${srcdir}/NoiseTorch"
+	    cd "${srcdir}/NoiseTorch"
 }
 
 build() {
-	cd "${srcdir}/NoiseTorch"
-	make
+	    cd "${srcdir}/NoiseTorch"
+	    make
 }
 
 package() {
-	install -Dm755 "${srcdir}/NoiseTorch/bin/noisetorch" "${pkgdir}/usr/bin/noisetorch"
-	install -Dm644 "${srcdir}/NoiseTorch/assets/noisetorch.desktop" "${pkgdir}/usr/share/applications/noisetorch.desktop"
-	install -Dm644 "${srcdir}/NoiseTorch/assets/icon/noisetorch.png" "${pkgdir}/usr/share/icons/hicolor/256x256/apps/noisetorch.png"
+     	install -Dm755 "${srcdir}/NoiseTorch/bin/noisetorch" "${pkgdir}/usr/bin/noisetorch"
+     	install -Dm644 "${srcdir}/NoiseTorch/assets/noisetorch.desktop" "${pkgdir}/usr/share/applications/noisetorch.desktop"
+	    install -Dm644 "${srcdir}/NoiseTorch/assets/icon/noisetorch.png" "${pkgdir}/usr/share/icons/hicolor/256x256/apps/noisetorch.png"
 }
