@@ -14,5 +14,5 @@ jobs:
         uses: reviewdog/action-shfmt@v1
         with:
           github_token: ${{ github.token }}
-          level: warning
+          level: error
           reviewdog_flags: -reporter github-pr-review
