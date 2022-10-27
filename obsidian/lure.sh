@@ -1,6 +1,6 @@
 name='obsidian'
-version='1.0.0'
-release='1'
+version='1.0.3'
+release='2'
 desc='A powerful knowledge base that works on top of a local folder of plain text Markdown files'
 homepage='https://obsidian.md/'
 architectures=('amd64')
@@ -11,8 +11,8 @@ conflicts=('obsidian')
 deps_amd64=('zlib' 'hicolor-icon-theme' 'fuse3')
 build_deps=('npm')
 
-sources_amd64=("https://github.com/obsidianmd/obsidian-releases/releases/download/v${version}/${name}-${version}.tar.gz")
-checksums_amd64=('1f50a5f52073fe6c0df207b3164715e0ac48efec558d057602dc8b2b28d5a48f')
+sources_amd64=("https://github.com/obsidianmd/obsidian-releases/releases/download/v${version}/obsidian-${version}.tar.gz")
+checksums_amd64=('329424e60e35f386640808cb539520d11796815003b244b542e31c9cf74da1fb')
 
 prepare() {
 	cd ~/.npm
