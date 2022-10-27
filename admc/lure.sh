@@ -5,8 +5,8 @@ desc='user-friendly инструмент для Linux для работы с д�
 homepage='https://github.com/altlinux/admc.git'
 architectures=('amd64')
 license=('GPLv3')
-provides=('ADMC')
-conflicts=('ADMC')
+provides=('admc')
+conflicts=('admc')
 
 deps_amd64=('smbldap-tools' 'samba' 'samba-devel' 'samba-libs' 'samba-client' 'samba-client-libs' 'samba-common' 'samba-common-libs' 'samba-common-tools' 'samba-dc' 'samba-dc-bind-dlz' 'samba-dc-libs' 'samba-dc-provision' 'krb5-devel' 'glib2' 'glib2-devel' 'uuid' 'uuid-devel' 'uuid-c++' 'uuid-c++-devel' 'uuidd' 'uuid-dce' 'uuid-dce-devel' 'smbldap-tools' 'libsmbclient' 'libsmbclient-devel' 'uuid-perl' 'libuuid' 'libuuid-devel')
 build_deps=('cmake' 'gcc' 'gcc-c++' 'qt5-qtbase-devel' 'qt5-linguist')
