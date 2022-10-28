@@ -12,7 +12,7 @@ deps_amd64=('git' 'go')
 build_deps=('git' 'go')
 
 sources_amd64=("git+https://github.com/noisetorch/NoiseTorch.git#tag=v${version}")
-checksums_amd64=('4a30650314a6f83d979f3303d49618847ba58e39e3e26482dfe58b5e261c5611')
+checksums_amd64=('SKIP')
 
 prepare() {
 	    cd "${srcdir}/NoiseTorch"
