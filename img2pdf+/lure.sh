@@ -11,7 +11,7 @@ build_deps=("python3" "python3-pip")
 build_deps_arch=("python" "python-pip")
 build_deps_opensuse=("python3" "python-pip")
 sources=("git+https://github.com/Elagoht/img2pdf")
-checksums="SKIP"
+checksums=("SKIP")
 version() {
 	cd "$srcdir/img2pdf"
 	printf "r%s.%s" "$(git rev-list --count HEAD)" "$(git rev-parse --short HEAD)"

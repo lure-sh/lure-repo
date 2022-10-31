@@ -8,13 +8,13 @@ license=('GPLv3')
 maintainer='Furkan Baytekin (Elagoht)'
 provides=('glue')
 deps=('python3')
+sources=('git+https://github.com/Elagoht/Glue')
+checksums=('SKIP')
 version() {
-  printf "$version"
+	cd "$srcdir/Glue"
+	printf "r%s.%s" "$(git rev-list --count HEAD)" "$(git rev-parse --short HEAD)"
 }
 package() {
-    curl https://raw.githubusercontent.com/Elagoht/Glue/master/glue -o glue
-    chmod -v +x glue
     install -d "$pkgdir/usr/bin/"
-    install -Dm755 "glue" -t "$pkgdir/usr/bin"
-    rm glue
+    install -Dm755 "Glue/glue" -t "$pkgdir/usr/bin"
 }
