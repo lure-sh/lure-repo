@@ -22,4 +22,3 @@ package() {
   install -d "$pkgdir/usr/bin"
   ln -sv "/usr/share/sudomice/SudoMice" "$pkgdir/usr/bin/sudo-mice"
 }
-
