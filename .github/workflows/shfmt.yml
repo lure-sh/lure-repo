@@ -5,8 +5,8 @@ jobs:
     name: runner / shfmt
     runs-on: ubuntu-latest
     permissions:
-      contents: read|write
-      pull-requests: read|write
+      contents: write
+      pull-requests: write
     steps:
       - name: Check out the repo
         uses: actions/checkout@v2
