@@ -27,16 +27,16 @@ checksums_amd64=('f09c928fa3b4c810da016d984fde4f9ea2504faed17c7e1633d21d65a07d5f
 backup=('/etc/itd.toml')
 
 package() {
-  # binaries
-  install -Dm755 "./itd" "${pkgdir}/usr/bin/itd"
-  install -Dm755 "./itctl" "${pkgdir}/usr/bin/itctl"
+	# binaries
+	install -Dm755 "./itd" "${pkgdir}/usr/bin/itd"
+	install -Dm755 "./itctl" "${pkgdir}/usr/bin/itctl"
 
-  # service
-  install -Dm644 "./itd.service" ${pkgdir}/usr/lib/systemd/user/itd.service
+	# service
+	install -Dm644 "./itd.service" ${pkgdir}/usr/lib/systemd/user/itd.service
 
-  # config
-  install -Dm644 "./itd.toml" ${pkgdir}/etc/itd.toml
+	# config
+	install -Dm644 "./itd.toml" ${pkgdir}/etc/itd.toml
 
-  # license
-  install -Dm644 "./LICENSE" "${pkgdir}/usr/share/licenses/itd/LICENSE"
+	# license
+	install -Dm644 "./LICENSE" "${pkgdir}/usr/share/licenses/itd/LICENSE"
 }

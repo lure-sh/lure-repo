@@ -13,12 +13,12 @@ deps_arch=('glu')
 deps_opensuse=('mesa-libGLU')
 deps_debian=('libglu1-mesa')
 package() {
-  rm -v install.sh
-  install -d "$pkgdir/usr/share/applications"
-  install -Dm644 "SudoMice.desktop" -t "$pkgdir/usr/share/applications"
-  install -d "$pkgdir/usr/share/sudomice"
-  mv -v "assets" "$pkgdir/usr/share/sudomice/"
-  install -Dm755 "SudoMice" "$pkgdir/usr/share/sudomice"
-  install -d "$pkgdir/usr/bin"
-  ln -sv "/usr/share/sudomice/SudoMice" "$pkgdir/usr/bin/sudo-mice"
+	rm -v install.sh
+	install -d "$pkgdir/usr/share/applications"
+	install -Dm644 "SudoMice.desktop" -t "$pkgdir/usr/share/applications"
+	install -d "$pkgdir/usr/share/sudomice"
+	mv -v "assets" "$pkgdir/usr/share/sudomice/"
+	install -Dm755 "SudoMice" "$pkgdir/usr/share/sudomice"
+	install -d "$pkgdir/usr/bin"
+	ln -sv "/usr/share/sudomice/SudoMice" "$pkgdir/usr/bin/sudo-mice"
 }

@@ -11,10 +11,10 @@ deps=('python3')
 sources=('git+https://github.com/Elagoht/Glue')
 checksums=('SKIP')
 version() {
-  cd "$srcdir/Glue"
-  printf "r%s.%s" "$(git rev-list --count HEAD)" "$(git rev-parse --short HEAD)"
+	cd "$srcdir/Glue"
+	printf "r%s.%s" "$(git rev-list --count HEAD)" "$(git rev-parse --short HEAD)"
 }
 package() {
-  install -d "$pkgdir/usr/bin/"
-  install -Dm755 "Glue/glue" -t "$pkgdir/usr/bin"
+	install -d "$pkgdir/usr/bin/"
+	install -Dm755 "Glue/glue" -t "$pkgdir/usr/bin"
 }
