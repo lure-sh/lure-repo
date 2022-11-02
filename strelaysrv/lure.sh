@@ -1,5 +1,5 @@
 name='strelaysrv'
-version='1.18.6'
+version='1.22.1'
 release='1'
 desc='This is the relay server for the syncthing project.'
 homepage='https://syncthing.net/'
@@ -13,7 +13,7 @@ sources_amd64=("https://github.com/syncthing/relaysrv/releases/download/v${versi
 	"https://raw.githubusercontent.com/archlinux/svntogit-community/packages/syncthing/trunk/syncthing-relaysrv.service"
 	"https://raw.githubusercontent.com/archlinux/svntogit-community/packages/syncthing/trunk/syncthing-relaysrv.tmpfiles"
 	"https://raw.githubusercontent.com/archlinux/svntogit-community/packages/syncthing/trunk/syncthing-relaysrv.sysusers")
-checksums=('ff5f4dfa7e1d88d3db904aa78e0a536d809ad31d9d0fe0073c61a61dfa8b0b2a'
+checksums=('04028d3eb50bc6f007da1b65c2b37f9b8b3109efe4c8973f285893872081959b'
 	'SKIP'
 	'SKIP'
 	'SKIP')
