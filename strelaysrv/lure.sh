@@ -3,13 +3,13 @@ version='1.22.1'
 release='1'
 desc='This is the relay server for the syncthing project.'
 homepage='https://syncthing.net/'
-architectures='amd64'
-licenses='MPL'
-provides='syncthing-relaysrv'
-conflicts='syncthing-relaysrv'
+architectures=('amd64')
+licenses=('MPL-2.0')
+provides=('syncthing-relaysrv')
+conflicts=('syncthing-relaysrv')
 deps_amd64=('glibc')
 build_deps=('git' 'go')
-sources_amd64=("https://github.com/syncthing/relaysrv/releases/download/v${version}/${name}-linux-amd64-v${version}.tar.gz"
+sources=("https://github.com/syncthing/relaysrv/releases/download/v${version}/${name}-linux-amd64-v${version}.tar.gz"
 	"https://raw.githubusercontent.com/archlinux/svntogit-community/packages/syncthing/trunk/syncthing-relaysrv.service"
 	"https://raw.githubusercontent.com/archlinux/svntogit-community/packages/syncthing/trunk/syncthing-relaysrv.tmpfiles"
 	"https://raw.githubusercontent.com/archlinux/svntogit-community/packages/syncthing/trunk/syncthing-relaysrv.sysusers")
