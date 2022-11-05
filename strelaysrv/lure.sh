@@ -3,11 +3,11 @@ version='1.22.1'
 release='1'
 desc='This is the relay server for the syncthing project.'
 homepage='https://syncthing.net/'
-architectures='amd64'
-licenses='MPL-2.0'
-provides='syncthing-relaysrv'
-conflicts='syncthing-relaysrv'
 
+architectures=('amd64')
+license=('MPL-2.0')
+provides=('syncthing-relaysrv')
+conflicts=('syncthing-relaysrv')
 deps_amd64=('glibc')
 deps_amd64_debian=('libc6')
 build_deps=('git' 'go')

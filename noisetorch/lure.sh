@@ -4,7 +4,7 @@ release='1'
 desc='NoiseTorch-ng is an easy to use open source application for Linux with PulseAudio or PipeWire. It creates a virtual microphone that suppresses noise, in any application.'
 homepage='https://github.com/noisetorch/NoiseTorch'
 architectures=('amd64')
-license=('GPLv3')
+license=('GPL-3.0-or-later')
 provides=('noisetorch')
 conflicts=('noisetorch')
 
