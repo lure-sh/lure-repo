@@ -3,14 +3,14 @@ version='1.22.1'
 release='1'
 desc='Syncthing is a continuous file synchronization program. It synchronizes files between two or more computers.'
 homepage='https://syncthing.net/'
-architectures='amd64'
-licenses='MPL'
-provides='syncthing'
-conflicts='syncthing'
+architectures=('amd64')
+licenses=('MPL-2.0')
+provides=('syncthing')
+conflicts=('syncthing')
 deps_amd64=('glibc' 'strelaysrv')
 build_deps=('git' 'go')
 sources_amd64=("https://github.com/${name}/${name}/releases/download/v${version}/${name}-linux-amd64-v${version}.tar.gz")
-checksums=('f91066b8588c02b5ff77aa801cc4e0319f3467325bdd75326aebccffb6495698')
+checksums_amd64=('f91066b8588c02b5ff77aa801cc4e0319f3467325bdd75326aebccffb6495698')
 
 prepare() {
 	cd "${srcdir}"
