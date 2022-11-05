@@ -26,7 +26,7 @@ build() {
 }
 
 package() {
-install -Dm755 "${srcdir}/NoiseTorch/bin/noisetorch" "${pkgdir}/usr/bin/noisetorch"
-install -Dm644 "${srcdir}/NoiseTorch/assets/noisetorch.desktop" "${pkgdir}/usr/share/applications/noisetorch.desktop"
-install -Dm644 "${srcdir}/NoiseTorch/assets/icon/noisetorch.png" "${pkgdir}/usr/share/icons/hicolor/256x256/apps/noisetorch.png"
+	install -Dm755 "${srcdir}/NoiseTorch/bin/noisetorch" "${pkgdir}/usr/bin/noisetorch"
+	install -Dm644 "${srcdir}/NoiseTorch/assets/noisetorch.desktop" "${pkgdir}/usr/share/applications/noisetorch.desktop"
+	install -Dm644 "${srcdir}/NoiseTorch/assets/icon/noisetorch.png" "${pkgdir}/usr/share/icons/hicolor/256x256/apps/noisetorch.png"
 }

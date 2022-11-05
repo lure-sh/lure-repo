@@ -17,19 +17,19 @@ sources_amd64=("git+https://github.com/altlinux/${name}.git")
 checksums_amd64=('SKIP')
 
 prepare() {
-cd "${srcdir}/${name}"
-mkdir build
+	cd "${srcdir}/${name}"
+	mkdir build
 }
 
 build() {
-cd "${srcdir}/${name}/build"
-cmake ..
-make -j12
+	cd "${srcdir}/${name}/build"
+	cmake ..
+	make -j12
 }
 
 package() {
-install -Dm755 "${srcdir}/${name}/build/admc" "${pkgdir}/usr/bin/admc"
-install -Dm644 "${srcdir}/${name}/build/libadldap.so" "${pkgdir}/usr/lib/libadldap.so"
-install -Dm644 "${srcdir}/${name}/share/admc.desktop" "${pkgdir}/usr/share/applications/admc.desktop"
-install -Dm644 "${srcdir}/${name}/share/admc.svg" "${pkgdir}/usr/share/icons/hicolor/scalable/apps/admc.svg"
+	install -Dm755 "${srcdir}/${name}/build/admc" "${pkgdir}/usr/bin/admc"
+	install -Dm644 "${srcdir}/${name}/build/libadldap.so" "${pkgdir}/usr/lib/libadldap.so"
+	install -Dm644 "${srcdir}/${name}/share/admc.desktop" "${pkgdir}/usr/share/applications/admc.desktop"
+	install -Dm644 "${srcdir}/${name}/share/admc.svg" "${pkgdir}/usr/share/icons/hicolor/scalable/apps/admc.svg"
 }
