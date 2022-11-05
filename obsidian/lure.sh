@@ -9,9 +9,10 @@ provides=('obsidian')
 conflicts=('obsidian')
 
 deps_amd64=('zlib' 'hicolor-icon-theme' 'fuse3')
+deps_amd64_debian=('zlib1g' 'hicolor-icon-theme' 'fuse3')
 build_deps=('npm')
 
-sources_amd64=("https://github.com/obsidianmd/obsidian-releases/releases/download/v${version}/obsidian-${version}.tar.gz")
+sources_amd64=("https://github.com/obsidianmd/obsidian-releases/releases/download/v${version}/${name}-${version}.tar.gz")
 checksums_amd64=('329424e60e35f386640808cb539520d11796815003b244b542e31c9cf74da1fb')
 
 prepare() {

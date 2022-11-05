@@ -9,10 +9,12 @@ provides=('noisetorch')
 conflicts=('noisetorch')
 
 deps_amd64=('git' 'go')
+deps_amd64_debian=('git' 'golang')
 build_deps=('git' 'go')
+build_deps_debian=('git' 'golang')
 
 sources_amd64=("git+https://github.com/noisetorch/NoiseTorch.git#tag=v${version}")
-checksums_amd64=('SKIP')
+checksums_amd64=('4a30650314a6f83d979f3303d49618847ba58e39e3e26482dfe58b5e261c5611')
 
 prepare() {
 	cd "${srcdir}/NoiseTorch"
