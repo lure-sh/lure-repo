@@ -7,7 +7,8 @@ architectures='amd64'
 licenses='MPL'
 provides='syncthing'
 conflicts='syncthing'
-deps_amd64=('libc6' 'strelaysrv')
+deps_amd64=('glibc')
+deps_amd64_debian=('libc6' 'strelaysrv')
 build_deps=('git' 'go')
 build_deps_debian=('git' 'golang')
 

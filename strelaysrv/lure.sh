@@ -4,10 +4,12 @@ release='1'
 desc='This is the relay server for the syncthing project.'
 homepage='https://syncthing.net/'
 architectures='amd64'
-licenses='MPL'
+licenses='MPL-2.0'
 provides='syncthing-relaysrv'
 conflicts='syncthing-relaysrv'
-deps_amd64=('libc6')
+
+deps_amd64=('glibc')
+deps_amd64_debian=('libc6')
 build_deps=('git' 'go')
 build_deps_debian=('git' 'golang')
 
