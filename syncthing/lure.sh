@@ -13,7 +13,7 @@ build_deps=('git' 'go')
 build_deps_debian=('git' 'golang')
 
 sources_amd64=("https://github.com/${name}/${name}/releases/download/v${version}/${name}-linux-amd64-v${version}.tar.gz")
-checksums=('f91066b8588c02b5ff77aa801cc4e0319f3467325bdd75326aebccffb6495698')
+checksums_amd64=('f91066b8588c02b5ff77aa801cc4e0319f3467325bdd75326aebccffb6495698')
 
 prepare() {
 	cd "${srcdir}"

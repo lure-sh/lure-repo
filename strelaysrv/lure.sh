@@ -16,7 +16,7 @@ sources_amd64=("https://github.com/syncthing/relaysrv/releases/download/v${versi
 	"https://raw.githubusercontent.com/archlinux/svntogit-community/packages/syncthing/trunk/syncthing-relaysrv.service"
 	"https://raw.githubusercontent.com/archlinux/svntogit-community/packages/syncthing/trunk/syncthing-relaysrv.tmpfiles"
 	"https://raw.githubusercontent.com/archlinux/svntogit-community/packages/syncthing/trunk/syncthing-relaysrv.sysusers")
-checksums=('04028d3eb50bc6f007da1b65c2b37f9b8b3109efe4c8973f285893872081959b'
+checksums_amd64=('04028d3eb50bc6f007da1b65c2b37f9b8b3109efe4c8973f285893872081959b'
 	'SKIP'
 	'SKIP'
 	'SKIP')
