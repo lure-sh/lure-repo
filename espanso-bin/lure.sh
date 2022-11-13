@@ -4,7 +4,7 @@ release='1'
 desc='Cross-platform Text Expander written in Rust'
 homepage='https://espanso.org/'
 architectures=('amd64')
-license=('GPL3')
+license=('GPL-3.0')
 provides=("${pkgname%-bin}")
 conflicts=("${pkgname%-bin}")
 
