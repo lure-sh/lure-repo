@@ -9,7 +9,6 @@ provides=("${pkgname%-bin}")
 conflicts=("${pkgname%-bin}")
 
 deps_amd64=('xdotool' 'xclip')
-deps_amd64_debian=('xdotool' 'xclip')
 
 sources_amd64=("https://github.com/federico-terzi/espanso/releases/download/v${version}/Espanso-X11.AppImage"
 	"https://raw.githubusercontent.com/federico-terzi/espanso/v${version}/espanso/src/res/linux/systemd.service")
