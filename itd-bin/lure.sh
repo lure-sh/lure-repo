@@ -13,16 +13,16 @@ deps_arch=('dbus' 'bluez' 'libpulse')
 deps_opensuse=('dbus-1' 'bluez' 'pulseaudio-utils')
 
 sources_arm64=("https://gitea.arsenm.dev/Arsen6331/itd/releases/download/v0.0.9/itd_0.0.9_linux_aarch64.tar.gz")
-checksums_arm64=('a10aaa7d72129b0767c9881158c73d41a3e547344ae0cf5c44d8d51570847af5')
+checksums_arm64=('262108ade80aa940eec254b1f4c66064851faae9253af2b9d4a77c070aed2c9d')
 
 sources_arm=("https://gitea.arsenm.dev/Arsen6331/itd/releases/download/v0.0.9/itd_0.0.9_linux_armv6.tar.gz")
-checksums_arm=('2c3d5642ad1ecf7ce717442a3529f00651e6d5bbec1cef15d2f13dd201233d22')
+checksums_arm=('2d922e2d32135dd64187413407c1f3f952ac8c5bf5c80f45863fb9f644263249')
 
 sources_386=("https://gitea.arsenm.dev/Arsen6331/itd/releases/download/v0.0.9/itd_0.0.9_linux_i386.tar.gz")
-checksums_386=('858b14a51bb24e7ad41958cccfe8a9aa66b167a6aaee86d5f34bee8f79d8feb2')
+checksums_386=('29da3d3207777c6693835ea1a18da41034345286f7c044e3bbcb9b93993eef4e')
 
 sources_amd64=("https://gitea.arsenm.dev/Arsen6331/itd/releases/download/v0.0.9/itd_0.0.9_linux_x86_64.tar.gz")
-checksums_amd64=('f09c928fa3b4c810da016d984fde4f9ea2504faed17c7e1633d21d65a07d5f22')
+checksums_amd64=('93d3d7c1c20f00fa3c3c1a5df257a72c48ec351a03f00ca6294afb0db48abeb9')
 
 backup=('/etc/itd.toml')
 
