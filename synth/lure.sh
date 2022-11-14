@@ -17,28 +17,29 @@ build_deps_opensuse=('rustup' 'sqlite3')
 build_deps_alpine=('rustup' 'sqlite-dev')
 build_deps_fedora=('libsq3-devel')
 
-
-_preparer() {
+prepare_arch() {
 	rustup install nightly
 	cd "${srcdir}/${name}-${version}"
 	cargo fetch --locked
 }
 
-prepare_arch() {
-	_preparer()
-}
-
 prepare_opensuse() {
-	_preparer()
+	rustup install nightly
+	cd "${srcdir}/${name}-${version}"
+	cargo fetch --locked
 }
 
 prepare_alpine() {
-	_preparer()
+	rustup install nightly
+	cd "${srcdir}/${name}-${version}"
+	cargo fetch --locked
 }
 
 prepare() {
 	rustup --version || wget https://sh.rustup.rs -O rustup.sh && sh rustup.sh -y 
-	_preparer()
+	rustup install nightly
+	cd "${srcdir}/${name}-${version}"
+	cargo fetch --locked
 }
 
 build() {
