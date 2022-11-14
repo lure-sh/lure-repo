@@ -6,8 +6,8 @@ homepage='https://gitlab.com/iamawacko-oss/oniongen-rs'
 maintainer='s e <iamawacko@protonmail.com>'
 architectures=('amd64' 'aarch64' 'arm7' 'arm6' '386')
 license=('MIT')
-sources=("https://gitlab.com/iamawacko-oss/oniongen-rs/-/archive/v${version}/oniongen-rs-v${version}.tar.gz")
-checksums='SKIP'
+sources=("https://static.crates.io/crates/${name}/${name}-${version}.crate")
+checksums=('96ea9b8294e49b00a31f5ec5b127cc0b516d017f6a463e875d7c51855a09bd61')
 provides=('oniongen-rs')
 conflicts=('oniongen-rs')
 
