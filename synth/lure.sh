@@ -11,10 +11,11 @@ checksums='18996ebb6a7a8a9d36d961fd7fc1dee38d78b0d03c57ab5681f312600ab5139e'
 provides=('synth')
 conflicts=('synth')
 
-build_deps=('wget')
-build_deps_arch=('rustup')
-build_deps_opensuse=('rustup')
-build_deps_alpine=('rustup')
+build_deps=('wget' 'libsqlite3-dev')
+build_deps_arch=('rustup' 'sqlite')
+build_deps_opensuse=('rustup' 'sqlite3')
+build_deps_alpine=('rustup' 'sqlite-dev')
+build_deps_fedora=('libsq3-devel')
 
 
 _preparer() {
