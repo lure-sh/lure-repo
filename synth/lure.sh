@@ -15,7 +15,7 @@ build_deps=('wget' 'libsqlite3-dev')
 build_deps_arch=('rustup' 'sqlite')
 build_deps_opensuse=('rustup' 'sqlite3')
 build_deps_alpine=('rustup' 'sqlite-dev')
-build_deps_fedora=('libsq3-devel')
+build_deps_fedora=('wget' 'libsq3-devel')
 
 prepare_arch() {
 	rustup install nightly
