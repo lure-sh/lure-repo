@@ -5,7 +5,7 @@ desc='Rust toolchain manager'
 homepage='https://rustup.rs/'
 maintainer='s e <iamawacko@protonmail.com>'
 architectures=('amd64' 'aarch64' 'arm7' '386')
-license=('MIT', 'Apache-2.0')
+license=('MIT' 'Apache-2.0')
 provides=('rustup')
 conflicts=('rustup')
 
