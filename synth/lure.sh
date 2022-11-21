@@ -1,13 +1,13 @@
 name='synth'
-version='0.6.8'
+version='0.6.9'
 release='2'
 desc='The Open Source Data Generator'
 homepage='https://getsynth.com/'
 maintainer='s e <iamawacko@protonmail.com>'
 architectures=('amd64' 'aarch64' 'arm7' 'arm6' '386')
-license=('MIT', 'Apache-2.0')
+license=('MIT' 'Apache-2.0')
 sources=("https://github.com/shuttle-hq/synth/archive/refs/tags/v${version}.tar.gz")
-checksums='18996ebb6a7a8a9d36d961fd7fc1dee38d78b0d03c57ab5681f312600ab5139e'
+checksums=('f89fc355dc0e311a6e5e0e8047f4721f23e35cdcb3355e85c7c66e8e2e67da91')
 provides=('synth')
 conflicts=('synth')
 
