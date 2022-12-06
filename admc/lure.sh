@@ -4,7 +4,7 @@ release='2'
 desc='user-friendly инструмент для Linux для работы с доменом Active Directory и групповыми политиками.'
 homepage='https://github.com/altlinux/admc.git'
 architectures=('amd64')
-license=('GPLv3')
+license=('GPL-3.0-or-later')
 provides=('admc')
 conflicts=('admc')
 
