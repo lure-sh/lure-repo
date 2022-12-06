@@ -5,8 +5,8 @@ desc='PortProton is a project designed to make it easy and convenient to run Win
 homepage='https://linux-gaming.ru/'
 architectures=('all')
 licenses='MIT'
-provides='portproton'
-conflicts='portproton'
+provides=('portproton')
+conflicts=('portproton')
 
 deps_redos=('bubblewrap' 'cabextract' 'curl' 'icoutils' 'vulkan-loader' 'vulkan-loader(x86-32)' 'vulkan-tools' 'wget' 'zenity' 'zstd')
 deps_arch=('bash' 'icoutils' 'wget' 'bubblewrap' 'zstd' 'cabextract' 'bc' 'tar' 'openssl' 'gamemode' 'desktop-file-utils'\
