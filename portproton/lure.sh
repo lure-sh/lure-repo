@@ -9,8 +9,8 @@ provides=('portproton')
 conflicts=('portproton')
 
 deps_redos=('bubblewrap' 'cabextract' 'curl' 'icoutils' 'vulkan-loader' 'vulkan-loader(x86-32)' 'vulkan-tools' 'wget' 'zenity' 'zstd')
-deps_arch=('bash' 'icoutils' 'wget' 'bubblewrap' 'zstd' 'cabextract' 'bc' 'tar' 'openssl' 'gamemode' 'desktop-file-utils'\
-	'curl' 'dbus' 'freetype2' 'gdk-pixbuf2' 'ttf-font' 'zenity' 'lsb-release' 'nss' 'xorg-xrandr' 'vulkan-driver' 'vulkan-icd-loader'\
+deps_arch=('bash' 'icoutils' 'wget' 'bubblewrap' 'zstd' 'cabextract' 'bc' 'tar' 'openssl' 'gamemode' 'desktop-file-utils'
+	'curl' 'dbus' 'freetype2' 'gdk-pixbuf2' 'ttf-font' 'zenity' 'lsb-release' 'nss' 'xorg-xrandr' 'vulkan-driver' 'vulkan-icd-loader'
 	'lsof' 'lib32-freetype2' 'lib32-libgl' 'lib32-gcc-libs' 'lib32-libx11' 'lib32-libxss' 'lib32-alsa-plugins' 'lib32-libgpg-error'
 	'lib32-nss' 'lib32-vulkan-driver' 'lib32-vulkan-icd-loader' 'lib32-gamemode' 'lib32-openssl')
 deps_debian=('curl' 'zenity' 'cabextract' 'bubblewrap' 'gamemode' 'icoutils' 'tar' 'wget' 'zstd' 'libvulkan1')
