@@ -24,7 +24,6 @@ sources=(
 checksums=(
 	'SKIP'
 	'SKIP'
-	'SKIP'
 )
 
 #scripts=(
