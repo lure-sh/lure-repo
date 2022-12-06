@@ -8,7 +8,8 @@ license=('GPL-3.0-or-later')
 provides=('admc')
 conflicts=('admc')
 
-deps_amd64=('smbldap-tools'
+deps_amd64=(
+	'smbldap-tools'
 	'samba'
 	'samba-libs'
 	'samba-client'
@@ -33,10 +34,28 @@ deps_amd64=('smbldap-tools'
 	'uuid-perl'
 	'libuuid'
 )
-deps_amd64_debian=('libldap-2.4-2' 'libsasl2-2' 'libsmbclient' 'libuuid1' 'libqt5help5' 'libkrb5-3')
+deps_amd64_debian=(
+	'libldap-2.4-2'
+	'libsasl2-2'
+	'libsmbclient'
+	'libuuid1'
+	'libqt5help5'
+	'libkrb5-3')
 build_deps=('cmake' 'gcc' 'gcc-c++' 'qt5-qtbase-devel' 'qt5-linguist' 'openldap-devel')
-build_deps_debian=('debhelper' 'cmake' 'qtbase5-dev' 'libqt5help5' 'qttools5-dev' 'libldap2-dev'
-	'pkg-config' 'samba-dev' 'libsmbclient-dev' 'libkrb5-dev' 'libglib2.0-dev' 'libsasl2-dev')
+build_deps_debian=(
+	'debhelper'
+	'cmake'
+	'qtbase5-dev'
+	'libqt5help5'
+	'qttools5-dev'
+	'libldap2-dev'
+	'pkg-config'
+	'samba-dev'
+	'libsmbclient-dev'
+	'libkrb5-dev'
+	'libglib2.0-dev'
+	'libsasl2-dev'
+)
 
 sources_amd64=("git+https://github.com/altlinux/${name}.git")
 checksums_amd64=('SKIP')
