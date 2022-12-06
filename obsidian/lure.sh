@@ -25,10 +25,7 @@ prepare() {
 }
 
 package() {
-	# binaries
 	install -Dm755 "${scriptdir}/${name}" "${pkgdir}/usr/bin/obsidian"
-
-	# desctop file
 	install -Dm644 "${scriptdir}/${name}.desktop" -t "${pkgdir}/usr/share/applications/"
 	install -Dm644 ./icon.png "${pkgdir}/usr/share/pixmaps/obsidian.png"
 	cd "${srcdir}/${name}-${version}/resources/"
