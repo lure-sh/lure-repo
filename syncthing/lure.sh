@@ -1,5 +1,5 @@
 name='syncthing'
-version='1.22.1'
+version='1.22.2'
 release='1'
 desc='Syncthing is a continuous file synchronization program. It synchronizes files between two or more computers.'
 homepage='https://syncthing.net/'
@@ -13,7 +13,7 @@ build_deps=('git' 'go')
 build_deps_debian=('git' 'golang')
 
 sources_amd64=("https://github.com/${name}/${name}/releases/download/v${version}/${name}-linux-amd64-v${version}.tar.gz")
-checksums_amd64=('f91066b8588c02b5ff77aa801cc4e0319f3467325bdd75326aebccffb6495698')
+checksums_amd64=('SKIP')
 
 prepare() {
 	cd "${srcdir}"
