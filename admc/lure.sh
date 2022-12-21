@@ -1,7 +1,7 @@
 name='admc'
 version='0.11.0'
-release='2'
-desc='user-friendly инструмент для Linux для работы с доменом Active Directory и групповыми политиками.'
+release='3'
+desc='User-friendly tool for working with Active Directory domains and group policies'
 homepage='https://github.com/altlinux/admc.git'
 architectures=('amd64')
 license=('GPL-3.0-or-later')
