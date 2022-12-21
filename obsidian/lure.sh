@@ -1,5 +1,5 @@
 name='obsidian'
-version='1.0.3'
+version='1.1.8'
 release='2'
 desc='A powerful knowledge base that works on top of a local folder of plain text Markdown files'
 homepage='https://obsidian.md/'
@@ -13,7 +13,7 @@ deps_amd64_debian=('zlib1g' 'hicolor-icon-theme' 'fuse3')
 build_deps=('npm')
 
 sources_amd64=("https://github.com/obsidianmd/obsidian-releases/releases/download/v${version}/${name}-${version}.tar.gz")
-checksums_amd64=('329424e60e35f386640808cb539520d11796815003b244b542e31c9cf74da1fb')
+checksums_amd64=('SKIP')
 
 prepare() {
 	cd ~/.npm
