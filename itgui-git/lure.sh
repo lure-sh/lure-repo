@@ -1,9 +1,9 @@
 name='itgui-git'
-version='r99.08113c2'
+version='99.08113c2'
 release=1
 desc='GUI client for ITD'
 homepage='https://gitea.arsenm.dev/Arsen6331/itd'
-architectures=('amd64' 'aarch64' 'arm7' 'arm6' '386')
+architectures=('amd64' 'arm64' 'arm7' 'arm6' '386')
 license=('GPL-3.0-or-later')
 provides=('itgui')
 conflicts=('itgui')
@@ -27,7 +27,7 @@ backup=('/etc/itd.toml')
 
 version() {
 	cd "$srcdir/itd"
-	printf "r%s.%s" "$(git rev-list --count HEAD)" "$(git rev-parse --short HEAD)"
+	git-version
 }
 
 build() {
