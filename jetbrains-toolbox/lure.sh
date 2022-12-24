@@ -4,7 +4,7 @@ release='1'
 desc='Manage all your JetBrains Projects and Tools'
 homepage='https://www.jetbrains.com/toolbox/'
 architectures=('amd64')
-license=('jetbrains')
+license=('custom:Jetbrains')
 provides=('jetbrains-toolbox')
 conflicts=('jetbrains-toolbox')
 
