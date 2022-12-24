@@ -1,5 +1,5 @@
 name='lure-git'
-version'88.d32437e'
+version='88.d32437e'
 release=1
 desc='Linux User REpository'
 homepage='https://gitea.arsenm.dev/Arsen6331/lure'

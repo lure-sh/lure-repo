@@ -1,5 +1,5 @@
 name='itd-git'
-version'188.271510d'
+version='188.271510d'
 release=1
 desc='Companion daemon for the InfiniTime firmware on the PineTime smartwatch'
 homepage='https://gitea.arsenm.dev/Arsen6331/itd'

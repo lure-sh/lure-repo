@@ -1,5 +1,5 @@
 name='tuntox-git'
-version'269.ef1f283'
+version='269.ef1f283'
 release=1
 desc='Tunnel TCP connections over the Tox protocol'
 homepage='https://github.com/gjedeer/tuntox'

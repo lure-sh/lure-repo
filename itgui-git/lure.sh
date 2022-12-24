@@ -1,5 +1,5 @@
 name='itgui-git'
-version'99.08113c2'
+version='99.08113c2'
 release=1
 desc='GUI client for ITD'
 homepage='https://gitea.arsenm.dev/Arsen6331/itd'
