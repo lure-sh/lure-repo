@@ -1,6 +1,6 @@
 name='obsidian'
-version='1.1.8'
-release='2'
+version='1.1.9'
+release='1'
 desc='A powerful knowledge base that works on top of a local folder of plain text Markdown files'
 homepage='https://obsidian.md/'
 architectures=('amd64')
