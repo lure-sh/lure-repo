@@ -18,7 +18,7 @@ package() {
   install -Dm644 "${scriptdir}/${name}.desktop" "${pkgdir}/usr/share/applications/${name}.desktop"
   install -Dm644 "${scriptdir}/icon.svg" "${pkgdir}/usr/share/pixmaps/${name}.svg"
   install -Dm755 "${srcdir}/${name}-${version}/${name}" "${pkgdir}/opt/${name}/${name}"
-  install -Dm644 LICENSE "${pkgdir}/usr/share/licenses/${name}/LICENSE.txt"
+  install -Dm644 "${srcdir}/LICENSE" "${pkgdir}/usr/share/licenses/${name}/LICENSE.txt"
 
   ln -s "/opt/${name}/${name}" "${pkgdir}/usr/bin/${name}"
 }
