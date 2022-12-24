@@ -1,5 +1,5 @@
 name='itd-git'
-version='r188.271510d'
+version'188.271510d'
 release=1
 desc='Companion daemon for the InfiniTime firmware on the PineTime smartwatch'
 homepage='https://gitea.arsenm.dev/Arsen6331/itd'
@@ -24,7 +24,7 @@ backup=('/etc/itd.toml')
 
 version() {
 	cd "$srcdir/itd"
-	printf "r%s.%s" "$(git rev-list --count HEAD)" "$(git rev-parse --short HEAD)"
+	git-version
 }
 
 build() {

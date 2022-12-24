@@ -1,5 +1,5 @@
 name='tuntox-git'
-version='r269.ef1f283'
+version'269.ef1f283'
 release=1
 desc='Tunnel TCP connections over the Tox protocol'
 homepage='https://github.com/gjedeer/tuntox'
@@ -21,7 +21,7 @@ checksums=('SKIP')
 
 version() {
 	cd "$srcdir/tuntox"
-	printf "r%s.%s" "$(git rev-list --count HEAD)" "$(git rev-parse --short HEAD)"
+	git-version
 }
 
 build() {

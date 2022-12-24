@@ -1,5 +1,5 @@
 name='lure-git'
-version='r88.d32437e'
+version'88.d32437e'
 release=1
 desc='Linux User REpository'
 homepage='https://gitea.arsenm.dev/Arsen6331/lure'
@@ -18,7 +18,7 @@ checksums=('SKIP')
 
 version() {
 	cd "$srcdir/lure"
-	printf "r%s.%s" "$(git rev-list --count HEAD)" "$(git rev-parse --short HEAD)"
+	git-version
 }
 
 build() {
