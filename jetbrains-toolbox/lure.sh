@@ -10,8 +10,8 @@ conflicts=('jetbrains-toolbox')
 
 deps=('java-11-openjdk' 'fuse' 'glib2' 'libxslt' 'libXScrnSaver' 'xcb-util-keysyms' 'xdg-utils' 'nss')
 
-sources_amd64=("https://download.jetbrains.com/toolbox/${name}-${version}.tar.gz")
-checksums_amd64=('SKIP')
+sources=("https://download.jetbrains.com/toolbox/${name}-${version}.tar.gz")
+checksums=('SKIP')
 
 package() {
 	install -dm755 "${pkgdir}/usr/bin/"
