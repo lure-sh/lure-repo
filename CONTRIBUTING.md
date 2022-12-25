@@ -30,7 +30,7 @@ Commit titles should be formatted as `$action($modified_package): $info`. The pa
 
 ### Pull Request titles
 
-PRs should be titled with all the changes being made. While PRs that make multiple changes are discouraged, if one is submitted, it should be titled with all the changes separated by semicolons. For example:
+While PRs that make multiple changes are discouraged, if one is submitted, it should be titled with all the changes separated by semicolons. For example:
 
 - `add: jetbrains-toolbox; upg(obsidian): 1.1.9`
 
