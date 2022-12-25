@@ -23,6 +23,7 @@
 Commit titles should be formatted as `$action($modified_package): $info`. The package may be omitted if it's not being modified (such as if it's being added or deleted), or if no package is being modified. Here are some examples:
 
 - `add: jetbrains-toolbox`
+- `del: jetbrains-toolbox`
 - `upg(obsidian): 1.1.9`
 - `fix(admc): remove unnecessary dependencies`
 - `doc: add rules for PR and commit titles to contribution guidelines`
