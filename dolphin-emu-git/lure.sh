@@ -1,6 +1,7 @@
 name='dolphin-emu-git'
 version='38515.f4b1155b4d'
 release=1
+desc='GameCube/Wii emulator'
 architectures=('amd64')
 
 build_deps=('g++' 'pkg-config' 'libudev-dev' 'libevdev-dev' 'qtbase5-dev' 'qtbase5-private-dev' 'libxi-dev')
