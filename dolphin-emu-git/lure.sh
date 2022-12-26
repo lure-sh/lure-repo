@@ -9,6 +9,11 @@ build_deps=('g++' 'pkg-config' 'libudev-dev' 'libevdev-dev' 'qtbase5-dev' 'qtbas
 sources=('git+https://github.com/dolphin-emu/dolphin.git')
 checksums=('SKIP')
 
+version() {
+    cd '$srcdir/$name'
+    git-version
+}
+
 build() {
     cd '$srcdir/dolphin'
     git submodule update --init --recursive
