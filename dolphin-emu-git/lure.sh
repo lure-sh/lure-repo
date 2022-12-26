@@ -10,19 +10,19 @@ sources=('git+https://github.com/dolphin-emu/dolphin.git')
 checksums=('SKIP')
 
 version() {
-    cd '$srcdir/$name'
-    git-version
+	cd '$srcdir/$name'
+	git-version
 }
 
 build() {
-    cd '$srcdir/dolphin'
-    git submodule update --init --recursive
-    mkdir 'build' && cd 'build'
-    cmake ..
-    make -j$(nproc)
+	cd '$srcdir/dolphin'
+	git submodule update --init --recursive
+	mkdir 'build' && cd 'build'
+	cmake ..
+	make -j$(nproc)
 }
 
 package() {
-    cd '$srcdir/dolphin/build'
-    make DESTDIR=$pkgdir install
+	cd '$srcdir/dolphin/build'
+	make DESTDIR=$pkgdir install
 }
