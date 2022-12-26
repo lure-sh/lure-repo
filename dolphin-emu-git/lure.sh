@@ -17,5 +17,6 @@ build() {
 }
 
 package() {
-
+    cd "$srcdir/dolphin/build"
+    make DESTDIR=$pkgdir install
 }
