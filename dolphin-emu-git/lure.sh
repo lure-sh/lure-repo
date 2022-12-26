@@ -10,6 +10,7 @@ checksums=('SKIP')
 
 build() {
     cd "$srcdir/dolphin"
+    git submodule update --init --recursive
     mkdir "build" && cd "build"
     cmake ..
 }
