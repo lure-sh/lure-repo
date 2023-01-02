@@ -29,4 +29,6 @@ build() {
 package() {
 	cd "$srcdir/lure"
 	install -Dm755 lure ${pkgdir}/usr/bin/lure
+	install -Dm755 ./scripts/completion/bash ${pkgdir}/usr/share/bash-completion/completions/lure
+	install -Dm755 ./scripts/completion/zsh ${pkgdir}/usr/share/zsh/site-functions/_lure
 }
