@@ -9,10 +9,8 @@ license=('GPL-3.0-or-later')
 provides=('noisetorch')
 conflicts=('noisetorch')
 
-deps_amd64=('git' 'go')
-deps_amd64_debian=('git' 'golang')
+deps=('git' 'go')
 build_deps=('git' 'go')
-build_deps_debian=('git' 'golang')
 
 sources=("git+https://github.com/noisetorch/NoiseTorch.git#tag=v${version}")
 checksums=('SKIP')
