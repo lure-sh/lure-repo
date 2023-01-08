@@ -2,7 +2,7 @@ name='discord-bin'
 version='0.0.22'
 release='1'
 desc='Discord (popular voice + video app) using the system provided electron for increased security and performance'
-homepage='homepage=''https://discord.com/'
+homepage='https://discord.com/'
 maintainer="Евгений Храмов <xpamych@yandex.ru>"
 architectures=('amd64')
 license=('custom')
