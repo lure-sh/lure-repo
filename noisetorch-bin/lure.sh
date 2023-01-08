@@ -1,8 +1,9 @@
-name='noisetorch'
+name='noisetorch-bin'
 version='0.12.2'
 release='1'
 desc='NoiseTorch-ng is an easy to use open source application for Linux with PulseAudio or PipeWire. It creates a virtual microphone that suppresses noise, in any application.'
 homepage='https://github.com/noisetorch/NoiseTorch'
+maintainer="Евгений Храмов <xpamych@yandex.ru>"
 architectures=('amd64')
 license=('GPL-3.0-or-later')
 provides=('noisetorch')
@@ -13,8 +14,8 @@ deps_amd64_debian=('git' 'golang')
 build_deps=('git' 'go')
 build_deps_debian=('git' 'golang')
 
-sources_amd64=("git+https://github.com/noisetorch/NoiseTorch.git#tag=v${version}")
-checksums_amd64=('4a30650314a6f83d979f3303d49618847ba58e39e3e26482dfe58b5e261c5611')
+sources=("git+https://github.com/noisetorch/NoiseTorch.git#tag=v${version}")
+checksums=('SKIP')
 
 prepare() {
 	cd "${srcdir}/NoiseTorch"

@@ -3,6 +3,7 @@ version='1.27.2.13801'
 release='1'
 desc='Manage all your JetBrains Projects and Tools'
 homepage='https://www.jetbrains.com/toolbox/'
+maintainer="Евгений Храмов <xpamych@yandex.ru>"
 architectures=('amd64')
 license=('custom:Jetbrains')
 provides=('jetbrains-toolbox')

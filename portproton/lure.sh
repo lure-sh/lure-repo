@@ -26,10 +26,6 @@ checksums=(
 	'SKIP'
 )
 
-#scripts=(
-#['preinstall']='preinstall.sh'
-#)
-
 prepare() {
 	cd "${srcdir}"
 	if grep -q ID=debian "/etc/os-release"; then

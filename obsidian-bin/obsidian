@@ -1,0 +1,2 @@
+#!/bin/sh
+exec ~/.npm/node_modules/electron/dist/electron /usr/lib/obsidian/app.asar "$@"
