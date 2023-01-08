@@ -11,15 +11,15 @@ conflicts=('jetbrains-toolbox')
 
 deps=('java-11-openjdk' 'fuse' 'glib2' 'libxslt' 'libXScrnSaver' 'xcb-util-keysyms' 'xdg-utils' 'nss')
 
-sources=("https://download.jetbrains.com/toolbox/${name}-${version}.tar.gz")
+sources=("https://download.jetbrains.com/toolbox/${provides}-${version}.tar.gz")
 checksums=('SKIP')
 
 package() {
 	install -dm755 "${pkgdir}/usr/bin/"
-	install -Dm644 "${scriptdir}/${name}.desktop" "${pkgdir}/usr/share/applications/${name}.desktop"
-	install -Dm644 "${scriptdir}/icon.svg" "${pkgdir}/usr/share/pixmaps/${name}.svg"
-	install -Dm755 "${srcdir}/${name}-${version}/${name}" "${pkgdir}/opt/${name}/${name}"
-	install -Dm644 "${srcdir}/LICENSE" "${pkgdir}/usr/share/licenses/${name}/LICENSE.txt"
+	install -Dm644 "${scriptdir}/${provides}.desktop" "${pkgdir}/usr/share/applications/${provides}.desktop"
+	install -Dm644 "${scriptdir}/icon.svg" "${pkgdir}/usr/share/pixmaps/${provides}.svg"
+	install -Dm755 "${srcdir}/${provides}-${version}/${provides}" "${pkgdir}/opt/${provides}/${provides}"
+	install -Dm644 "${srcdir}/LICENSE" "${pkgdir}/usr/share/licenses/${provides}/LICENSE.txt"
 
-	ln -s "/opt/${name}/${name}" "${pkgdir}/usr/bin/${name}"
+	ln -s "/opt/${provides}/${provides}" "${pkgdir}/usr/bin/${provides}"
 }
