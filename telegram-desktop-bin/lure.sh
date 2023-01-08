@@ -39,7 +39,7 @@ package() {
 	install -dm755 "${pkgdir}/usr/bin"
 	install -dm755 "${pkgdir}/usr/share/pixmaps/"
 	install -dm755 "${pkgdir}/usr/share/applications/"
-    # Program
+	# Program
 	install -Dm755 "${srcdir}/Telegram/Telegram" "${pkgdir}/usr/bin/telegram-desktop"
 
 	# Remove RPATH informations
@@ -47,9 +47,9 @@ package() {
 
 	# Desktop launcher
 	install -Dm644 "${srcdir}/icon256.png" "${pkgdir}/usr/share/pixmaps/telegram.png"
-	install -Dm644 "${scriptdir}/${provides}.desktop" "${pkgdir}/usr/share/applications/telegramdesktop.desktop"
+	install -Dm644 "${scriptdir}/${name}.desktop" "${pkgdir}/usr/share/applications/telegramdesktop.desktop"
 
-    # KDE5 & KDE4 protocol file
+	# KDE5 & KDE4 protocol file
 	install -d "${pkgdir}/usr/share/kservices5"
 	install -d "${pkgdir}/usr/share/kde4/services"
 	install -m644 "${scriptdir}/tg.protocol" "${pkgdir}/usr/share/kservices5/tg.protocol"

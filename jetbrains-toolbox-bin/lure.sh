@@ -1,4 +1,4 @@
-name='jetbrains-toolbox'
+name='jetbrains-toolbox-bin'
 version='1.27.2.13801'
 release='1'
 desc='Manage all your JetBrains Projects and Tools'
@@ -19,7 +19,7 @@ package() {
 	install -Dm644 "${scriptdir}/${provides}.desktop" "${pkgdir}/usr/share/applications/${provides}.desktop"
 	install -Dm644 "${scriptdir}/icon.svg" "${pkgdir}/usr/share/pixmaps/${provides}.svg"
 	install -Dm755 "${srcdir}/${provides}-${version}/${provides}" "${pkgdir}/opt/${provides}/${provides}"
-	install -Dm644 "${srcdir}/LICENSE" "${pkgdir}/usr/share/licenses/${provides}/LICENSE.txt"
+	install -Dm644 "${scriptdir}/LICENSE" "${pkgdir}/usr/share/licenses/${provides}/LICENSE.txt"
 
 	ln -s "/opt/${provides}/${provides}" "${pkgdir}/usr/bin/${provides}"
 }

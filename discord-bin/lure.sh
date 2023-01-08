@@ -26,6 +26,6 @@ package() {
 	cd "${srcdir}/Discord"
 	find . -type d -exec install -d {,"${pkgdir}/opt/discord/"}{} \;
 	find . -type f -exec install -D {,"${pkgdir}/opt/discord/"}{} \;
-    install -dm755 "${pkgdir}/usr/bin/"
+	install -dm755 "${pkgdir}/usr/bin/"
 	ln -s "${pkgdir}/opt/${provides}/${provides}" "${pkgdir}/usr/bin/${provides}"
 }
