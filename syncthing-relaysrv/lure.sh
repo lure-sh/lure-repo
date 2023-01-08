@@ -1,4 +1,4 @@
-name='syncthing-relaysrv-bin'
+name='syncthing-relaysrv'
 version='1.22.1'
 release='1'
 desc='This is the relay server for the syncthing project.'

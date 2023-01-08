@@ -1,4 +1,4 @@
-name='neofetch-bin'
+name='neofetch'
 version='7.1.0'
 release='1'
 desc='Neofetch displays information about your operating system, software and hardware in an aesthetic and visually pleasing way.'
