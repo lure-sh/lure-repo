@@ -27,6 +27,7 @@ Commit titles should be formatted as `$action($modified_package): $info`. The pa
 - `upg(obsidian): 1.1.9`
 - `fix(admc): remove unnecessary dependencies`
 - `doc: add rules for PR and commit titles to contribution guidelines`
+- `translate(go-bin): ru, es, zh`
 
 ### Pull Request titles
 
