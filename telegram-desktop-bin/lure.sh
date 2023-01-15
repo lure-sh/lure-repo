@@ -36,9 +36,9 @@ package() {
 	cd "${srcdir}/"
 
 	# Creating needed directories
-	install -dm755 "${pkgdir}/usr/bin"
-	install -dm755 "${pkgdir}/usr/share/pixmaps/"
-	install -dm755 "${pkgdir}/usr/share/applications/"
+	mkdir -p "${pkgdir}/usr/bin"
+	mkdir -p "${pkgdir}/usr/share/pixmaps/"
+	mkdir -p "${pkgdir}/usr/share/applications"
 	# Program
 	install -Dm755 "${srcdir}/Telegram/Telegram" "${pkgdir}/usr/bin/telegram-desktop"
 
