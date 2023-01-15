@@ -30,6 +30,6 @@ package() {
 	install -Dm755 "${scriptdir}/obsidian" "${pkgdir}/usr/bin/obsidian"
 	install -Dm644 "${scriptdir}/obsidian.desktop" -t "${pkgdir}/usr/share/applications/"
 	install -Dm644 ./icon.png "${pkgdir}/usr/share/pixmaps/obsidian.png"
-    mkdir -p "${pkgdir}/usr/lib/obsidian"
-    cp -a "${srcdir}/obsidian-${version}/resources/." "${pkgdir}/usr/lib/obsidian"
+	mkdir -p "${pkgdir}/usr/lib/obsidian"
+	cp -a "${srcdir}/obsidian-${version}/resources/." "${pkgdir}/usr/lib/obsidian"
 }
