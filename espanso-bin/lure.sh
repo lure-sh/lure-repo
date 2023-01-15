@@ -5,8 +5,8 @@ desc='Cross-platform Text Expander written in Rust'
 homepage='https://espanso.org/'
 architectures=('amd64')
 license=('GPL-3.0')
-provides=("${pkgname%-bin}")
-conflicts=("${pkgname%-bin}")
+provides=("espanso")
+conflicts=("espanso")
 
 deps_amd64=('xdotool' 'xclip')
 
@@ -16,7 +16,7 @@ checksums_amd64=('ad95210fcbcdf626624bb0f464839c5470a12f9243719492cd6a43607fdfdb
 	'0448185f394858b1f06c6458869e932da317501759c3f018a696d7789b15e8b9')
 
 prepare() {
-	sed "s|{{{espanso_path}}}|/usr/bin/espanso|g" "systemd.service" >"systemd.service"
+	sed -i "s|{{{espanso_path}}}|/usr/bin/espanso|g" "systemd.service"
 }
 
 package() {
