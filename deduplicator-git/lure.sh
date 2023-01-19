@@ -21,7 +21,7 @@ version() {
 
 build() {
 	cd "${srcdir}/deduplicator"
-    cargo build
+	cargo build
 }
 
 package() {
