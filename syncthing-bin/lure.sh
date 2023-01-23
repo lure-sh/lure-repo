@@ -1,4 +1,4 @@
-name='syncthing'
+name='syncthing-bin'
 version='1.23.0'
 release='1'
 desc='Syncthing is a continuous file synchronization program. It synchronizes files between two or more computers.'

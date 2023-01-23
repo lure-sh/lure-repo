@@ -3,6 +3,7 @@ version='1.0'
 release='1'
 desc='PortProton is a project designed to make it easy and convenient to run Windows games on Linux for both beginners and advanced users.'
 homepage='https://linux-gaming.ru/'
+maintainer="Евгений Храмов <xpamych@yandex.ru>"
 architectures=('all')
 licenses='MIT'
 provides=('portproton')
@@ -25,10 +26,6 @@ checksums=(
 	'SKIP'
 	'SKIP'
 )
-
-#scripts=(
-#['preinstall']='preinstall.sh'
-#)
 
 prepare() {
 	cd "${srcdir}"
