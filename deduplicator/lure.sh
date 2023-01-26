@@ -1,5 +1,5 @@
 name='deduplicator'
-version='0.1.3'
+version='0.1.6'
 release='1'
 desc='Find, Sort, Filter & Delete duplicate files'
 homepage='https://github.com/sreedevk/deduplicator'
