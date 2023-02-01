@@ -21,7 +21,7 @@ sources_arm6=("https://dl.google.com/go/go${version}.linux-armv6l.tar.gz")
 checksums_arm6=('ee8550213c62812f90dbfd3d098195adedd450379fd4d3bb2c85607fd5a2d283')
 
 sources_386=("https://dl.google.com/go/go${version}.linux-386.tar.gz")
-checksums_386=('f68331aa7458a3598060595f5601d5731fd452bb2c62ff23095ddad68854e510')
+checksums_386=('1420582fb43a15dbe94760fdd92171315414c4afc21ffe9d3b5875f9386ebe53')
 
 package() {
 	mkdir -p "$pkgdir/usr/lib/" "$pkgdir/usr/bin"
