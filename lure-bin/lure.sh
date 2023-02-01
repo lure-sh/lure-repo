@@ -22,7 +22,7 @@ checksums_386=('464ffabadc9a406f79eb0d1f634fea7803e10fde6a47610bc90945c4bb0029c1
 
 sources_riscv64=("https://gitea.arsenm.dev/Arsen6331/lure/releases/download/v0.0.7/lure_0.0.7_linux_riscv64.tar.gz")
 checksums_riscv64=('6e2eef3937f403bef1a8890bca4ce13daad39168a7887a75abf68e560b660c30')
-r
+
 package() {
 	install-binary ./lure
 }
