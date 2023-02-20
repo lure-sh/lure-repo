@@ -1,15 +1,21 @@
 name='synth'
 version='0.6.9'
-release='2'
+release='3'
 desc='The Open Source Data Generator'
 homepage='https://getsynth.com/'
 maintainer='s e <iamawacko@protonmail.com>'
 architectures=('amd64' 'arm64' 'arm7' 'arm6' '386')
-license=('MIT' 'Apache-2.0')
+license=('Apache-2.0')
 sources=("https://github.com/shuttle-hq/synth/archive/refs/tags/v${version}.tar.gz")
 checksums=('f89fc355dc0e311a6e5e0e8047f4721f23e35cdcb3355e85c7c66e8e2e67da91')
 provides=('synth')
 conflicts=('synth')
+
+deps=('libsqlite3')
+deps_arch=('sqlite')
+deps_opensuse=('sqlite3')
+deps_alpine=('sqlite')
+deps_fedora=('libsq3')
 
 build_deps=('rustup' 'libsqlite3-dev')
 build_deps_arch=('rustup' 'sqlite')
