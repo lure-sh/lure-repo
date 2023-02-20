@@ -1,5 +1,5 @@
 name='telegram-desktop-bin'
-version='4.6.1'
+version='4.6.3'
 release='1'
 desc='Official desktop version of Telegram messaging app - Static binaries'
 homepage='https://github.com/telegramdesktop/tdesktop'
