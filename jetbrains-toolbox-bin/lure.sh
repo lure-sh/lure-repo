@@ -1,5 +1,5 @@
 name='jetbrains-toolbox-bin'
-version='1.27.2.13801'
+version='1.27.3.14493'
 release='1'
 desc='Manage all your JetBrains Projects and Tools'
 homepage='https://www.jetbrains.com/toolbox/'
@@ -10,6 +10,7 @@ provides=('jetbrains-toolbox')
 conflicts=('jetbrains-toolbox')
 
 deps=('java-11-openjdk' 'fuse' 'glib2' 'libxslt' 'libXScrnSaver' 'xcb-util-keysyms' 'xdg-utils' 'nss')
+deps_rosa=('java-11-openjdk' 'fuse' 'glib2' 'libxslt1(x86-32)' 'libXScrnSaver' 'lib64xcb-util-keysyms1' 'xdg-utils' 'nss')
 
 sources=("https://download.jetbrains.com/toolbox/${provides}-${version}.tar.gz")
 checksums=('SKIP')
