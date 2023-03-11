@@ -9,6 +9,7 @@ license=('GPLv3')
 provides=('telegram-desktop')
 conflicts=('telegram-desktop')
 deps=('desktop-file-utils' 'glib2' 'hicolor-icon-theme' 'dbus-libs' 'libX11' 'libappindicator-gtk3' 'xdg-utils')
+deps_rosa=('desktop-file-utils' 'glib2' 'hicolor-icon-theme' 'lib64dbus-1_3' 'libX11' 'lib64appindicator3_1' 'xdg-utils')
 build_deps=('chrpath')
 
 sources=(
