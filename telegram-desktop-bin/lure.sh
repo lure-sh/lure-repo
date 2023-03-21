@@ -1,5 +1,5 @@
 name='telegram-desktop-bin'
-version='4.5.2'
+version='4.6.3'
 release='1'
 desc='Official desktop version of Telegram messaging app - Static binaries'
 homepage='https://github.com/telegramdesktop/tdesktop'
@@ -9,6 +9,7 @@ license=('GPLv3')
 provides=('telegram-desktop')
 conflicts=('telegram-desktop')
 deps=('desktop-file-utils' 'glib2' 'hicolor-icon-theme' 'dbus-libs' 'libX11' 'libappindicator-gtk3' 'xdg-utils')
+deps_rosa=('desktop-file-utils' 'glib2' 'hicolor-icon-theme' 'lib64dbus-1_3' 'libX11' 'lib64appindicator3_1' 'xdg-utils')
 build_deps=('chrpath')
 
 sources=(

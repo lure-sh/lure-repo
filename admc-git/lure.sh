@@ -1,5 +1,5 @@
 name='admc-git'
-version='3580.5a24f61'
+version='3592.023670c'
 release='1'
 desc='user-friendly инструмент для Linux для работы с доменом Active Directory и групповыми политиками.'
 homepage='https://github.com/altlinux/admc.git'

@@ -1,5 +1,5 @@
 name='obsidian-bin'
-version='1.1.9'
+version='1.1.16'
 release='1'
 desc='A powerful knowledge base that works on top of a local folder of plain text Markdown files'
 homepage='https://obsidian.md/'
