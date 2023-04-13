@@ -9,8 +9,7 @@ license=('GPL-3.0-or-later')
 provides=('noisetorch')
 conflicts=('noisetorch')
 
-deps=('git' 'go')
-build_deps=('git' 'go')
+build_deps=('git' 'go' 'make' 'gcc' 'gcc-c++')
 
 sources=("git+https://github.com/noisetorch/NoiseTorch.git#tag=v${version}")
 checksums=('SKIP')
