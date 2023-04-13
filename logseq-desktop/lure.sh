@@ -13,11 +13,11 @@ sources=("https://github.com/logseq/logseq/releases/download/${version}/logseq-l
 checksums=('SKIP')
 
 package() {
-    cd "${srcdir}/Logseq-linux-x64"
-    install -Dm644 "${scriptdir}/logseq-desktop.desktop" "${pkgdir}/usr/share/applications/logseq-desktop.desktop"
-    install -Dm644 "${srcdir}/Logseq-linux-x64/resources/app/icons/logseq.png" "${pkgdir}/usr/share/pixmaps/logseq.png"
-    install -d ${pkgdir}/opt/logseq
-    cp -r "${srcdir}/Logseq-linux-x64" "${pkgdir}/opt/logseq"
-    install -d "${pkgdir}/usr/bin"
-    ln -s "/opt/logseq/Logseq-linux-x64/Logseq" "${pkgdir}/usr/bin/logseq"
+	cd "${srcdir}/Logseq-linux-x64"
+	install -Dm644 "${scriptdir}/logseq-desktop.desktop" "${pkgdir}/usr/share/applications/logseq-desktop.desktop"
+	install -Dm644 "${srcdir}/Logseq-linux-x64/resources/app/icons/logseq.png" "${pkgdir}/usr/share/pixmaps/logseq.png"
+	install -d ${pkgdir}/opt/logseq
+	cp -r "${srcdir}/Logseq-linux-x64" "${pkgdir}/opt/logseq"
+	install -d "${pkgdir}/usr/bin"
+	ln -s "/opt/logseq/Logseq-linux-x64/Logseq" "${pkgdir}/usr/bin/logseq"
 }

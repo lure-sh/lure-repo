@@ -31,4 +31,3 @@ package() {
 	install -Dm755 "$srcdir/img2pdf-plus/dist/img2pdf+" -t "$pkgdir/usr/bin/"
 	#rm -rf "$srcdir/img2pdf-plus"
 }
-

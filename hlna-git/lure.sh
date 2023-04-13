@@ -1,4 +1,3 @@
-
 name='hlna-git'
 version='latest'
 release='1'
@@ -22,18 +21,17 @@ version() {
 }
 
 scripts=(
-    ['postinstall']='postinstall.sh'
-    ['postremove']='postremove.sh'
+	['postinstall']='postinstall.sh'
+	['postremove']='postremove.sh'
 )
 
 prepare() {
-    pip3 install --upgrade --user click colorama click_completion pyTelegramBotAPI discord
-    pip3 install --upgrade rcon
+	pip3 install --upgrade --user click colorama click_completion pyTelegramBotAPI discord
+	pip3 install --upgrade rcon
 }
 
 package() {
 	install -Dm755 "${srcdir}/hln-a/hlna.py" "${pkgdir}/usr/bin/hlna.py"
-    install -Dm755 "${srcdir}/hln-a/hlna_bot.py" "${pkgdir}/usr/bin/hlna-bot.py"
+	install -Dm755 "${srcdir}/hln-a/hlna_bot.py" "${pkgdir}/usr/bin/hlna-bot.py"
 	install -Dm644 "${srcdir}/hln-a/LICENSE.md" "${pkgdir}/usr/share/licenses/hlna/license"
 }
-

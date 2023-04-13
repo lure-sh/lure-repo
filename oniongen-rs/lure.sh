@@ -11,7 +11,7 @@ checksums=('96ea9b8294e49b00a31f5ec5b127cc0b516d017f6a463e875d7c51855a09bd61')
 provides=('oniongen-rs')
 conflicts=('oniongen-rs')
 
-build_deps=('rustup') 
+build_deps=('rustup')
 
 prepare() {
 	rustup install stable
