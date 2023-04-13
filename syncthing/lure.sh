@@ -1,5 +1,5 @@
 name='syncthing'
-version='1.23.2'
+version='1.23.4'
 release='1'
 desc='Syncthing is a continuous file synchronization program. It synchronizes files between two or more computers.'
 homepage='https://syncthing.net/'
