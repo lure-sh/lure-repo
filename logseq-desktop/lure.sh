@@ -1,5 +1,5 @@
 name='logseq-desktop'
-version='0.9.2'
+version='0.9.3'
 release='1'
 desc='A privacy-first, open-source platform for knowledge management and collaboration'
 homepage='https://logseq.com/'
