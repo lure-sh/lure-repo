@@ -1,5 +1,5 @@
 name='discord-bin'
-version='0.0.26'
+version='0.0.27'
 release='1'
 desc='Discord (popular voice + video app) using the system provided electron for increased security and performance'
 homepage='https://discord.com/'
