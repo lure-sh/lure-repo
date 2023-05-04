@@ -13,7 +13,7 @@ build_deps_arch=('go')
 build_deps_alpine=('go')
 build_deps_opensuse=('go')
 
-sources=("git+https://gitea.arsenm.dev/Arsen6331/lure.git")
+sources=("git+https://gitea.elara.ws/Elara6331/lure.git")
 checksums=('SKIP')
 
 version() {
