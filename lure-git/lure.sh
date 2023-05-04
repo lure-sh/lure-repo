@@ -21,6 +21,11 @@ version() {
 	git-version
 }
 
+prepare() {
+	cd "$srcdir/lure"
+	git-version > internal/config/version.txt
+}
+
 build() {
 	cd "$srcdir/lure"
 	go build
