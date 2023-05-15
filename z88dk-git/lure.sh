@@ -16,5 +16,5 @@ build() {
 }
 
 package() {
-
+	PREFIX="$pkgdir/usr" make install
 }
