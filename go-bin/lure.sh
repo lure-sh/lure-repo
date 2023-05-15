@@ -9,7 +9,7 @@ maintainer_ru='Элара Мусаелян <elara@elara.ws>'
 architectures=('amd64' 'arm64' 'arm6' '386')
 license=('BSD-3-Clause')
 provides=('go' 'golang')
-conflicts=('go' 'golang')
+conflicts=('go' 'golang' 'golang-bin' 'golang-go')
 
 sources_amd64=("https://dl.google.com/go/go${version}.linux-amd64.tar.gz")
 checksums_amd64=('698ef3243972a51ddb4028e4a1ac63dc6d60821bf18e59a807e051fee0a385bd')
