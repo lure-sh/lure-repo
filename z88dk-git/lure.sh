@@ -19,5 +19,6 @@ build() {
 }
 
 package() {
+	cd "$srcdir/z88dk"
 	PREFIX="$pkgdir/usr" make install
 }
