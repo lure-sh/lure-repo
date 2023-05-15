@@ -1,6 +1,6 @@
 name="go-bin"
 version="1.20.4"
-release=1
+release=2
 desc="Compiler and tools for the Go programming language"
 desc_ru="Компилятор и инструменты для языка программирования Go"
 homepage="https://go.dev/"
