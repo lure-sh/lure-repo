@@ -13,6 +13,9 @@ build() {
 	export BUILD_SDCC_HTTP=1
 	cd "$srcdir/z88dk"
 	./build.sh
+
+	eval "$(perl -I$HOME/perl5/lib/perl5 -Mlocal::lib)"
+	cpanm App::Prove File::Path CPU::Z80::Assembler Object::Tiny::RW List::Uniq YAML::Tiny
 }
 
 package() {
