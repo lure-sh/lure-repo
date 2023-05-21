@@ -29,5 +29,5 @@ package() {
 	eval "$(perl -I$HOME/perl5/lib/perl5 -Mlocal::lib)"
 	cpanm App::Prove File::Path CPU::Z80::Assembler Object::Tiny::RW List::Uniq YAML::Tiny
 	cd "$srcdir/z88dk"
-	PREFIX="$pkgdir/usr" make install
+	PREFIX="$pkgdir/usr/local" make install
 }
