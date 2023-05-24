@@ -1,5 +1,5 @@
 name='lure-git'
-version='88.d32437e'
+version='277.d144a7f'
 release=1
 desc='Linux User REpository'
 homepage='https://gitea.elara.ws/Elara6331/lure'
@@ -30,7 +30,7 @@ prepare() {
 
 build() {
 	cd "$srcdir/lure"
-	go build
+	CGO_ENABLED=0 go build
 }
 
 package() {
