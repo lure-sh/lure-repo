@@ -1,6 +1,6 @@
 name='z88dk-git'
 version='21023.a09ee3d7a'
-release=1
+release=2
 desc='The development kit for Z80 computers'
 homepage='https://github.com/z88dk/z88dk'
 maintainer='Atirut Wattanamongkol <atirut.wattanamnogkol@gmail.com>'
@@ -29,5 +29,5 @@ package() {
 	eval "$(perl -I$HOME/perl5/lib/perl5 -Mlocal::lib)"
 	cpanm App::Prove File::Path CPU::Z80::Assembler Object::Tiny::RW List::Uniq YAML::Tiny
 	cd "$srcdir/z88dk"
-	PREFIX="$pkgdir/usr" make install
+	PREFIX="$pkgdir/usr/local" make install
 }
