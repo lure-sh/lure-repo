@@ -1,6 +1,6 @@
 name='z88dk-git'
 version='21023.a09ee3d7a'
-release=1
+release=2
 desc='The development kit for Z80 computers'
 homepage='https://github.com/z88dk/z88dk'
 maintainer='Atirut Wattanamongkol <atirut.wattanamnogkol@gmail.com>'
