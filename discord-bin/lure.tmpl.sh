@@ -6,7 +6,7 @@ homepage='https://discord.com/'
 maintainer='Elara Musayelyan <elara@elara.ws>'
 maintainer_ru='Элара Мусаелян <elara@elara.ws>'
 architectures=('amd64')
-license=('custom:Commercial')
+license=('custom:Discord')
 provides=('discord')
 conflicts=('discord')
 
@@ -20,9 +20,8 @@ sources=("%s")
 checksums=('SKIP')
 
 package() {
-	mkdir -p "${pkgdir}/usr/share/"
 	install -Dm644 "${srcdir}/Discord/discord.png" "${pkgdir}/usr/share/pixmaps/discord.png"
-	install -Dm644 "${srcdir}/Discord/discord.desktop" "${pkgdir}/usr/share/applications/discord.desktop"
+	install-desktop "${srcdir}/Discord/discord.desktop"
 	cp -a "${srcdir}/Discord" "${pkgdir}/usr/share/discord"
 	mkdir -p "${pkgdir}/usr/bin/"
 	ln -s "${pkgdir}/usr/share/discord/Discord" "${pkgdir}/usr/bin/discord"
