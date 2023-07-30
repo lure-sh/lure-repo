@@ -11,7 +11,7 @@ build_deps_debian=("libgtk-3-0" "libwebkit2gtk-4.0-37")
 build_deps_arch=("gtk3" "webkit2gtk")
 build_deps_opensuse=("libgtk-3-0" "libwebkit2gtk-4_0-37")
 sources_amd64=("https://github.com/Elagoht/PomoDoIt/releases/download/v$version/pomodoit.tar.gz")
-checksums_amd64=("f054c3a31c43df9fd7df003ddca7c859f12b0cc1067f1030a1adfc7012e4878f")
+checksums_amd64=("0d7fa9696de08fbb53f8fe53f19557b7080b8a314013751bd1c2bd9b9b43c431")
 version() {
 	printf "%s" $version
 }
