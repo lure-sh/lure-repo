@@ -1,6 +1,6 @@
 name='lapce-bin'
 version='0.2.8'
-release='1'
+release='2'
 desc='Lightning-fast and Powerful Code Editor'
 homepage='https://lapce.dev/'
 maintainer='Elara Musayelyan <elara@elara.ws>'
@@ -10,11 +10,11 @@ license=('Apache-2.0')
 provides=('lapce')
 conflicts=('lapce')
 
-deps=('expat' 'fontconfig' 'libfreetype6' 'gtk+3.0' 'libxcb1' 'libxkbcommon-x11')
+deps=('expat' 'fontconfig' 'libfreetype6' 'libgtk-3-0' 'libxcb1' 'libxkbcommon0')
 deps_arch=('expat' 'fontconfig' 'freetype2' 'gtk3' 'libxcb' 'libxkbcommon')
 deps_fedora=('expat' 'fontconfig' 'freetype' 'gtk3' 'libxcb' 'libxkbcommon')
 deps_alpine=('expat' 'fontconfig' 'freetype' 'gtk+3.0' 'libxcb' 'libxkbcommon')
-deps_opensuse=('expat' 'fontconfig' 'libfreetype6' 'gtk3' 'libxcb1' 'libxkbcommon-x11')
+deps_opensuse=('expat' 'fontconfig' 'libfreetype6' 'gtk3' 'libxcb1' 'libxkbcommon0')
 
 sources=(
 	"https://github.com/lapce/lapce/releases/download/v${version}/Lapce-linux.tar.gz"
