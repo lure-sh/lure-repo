@@ -6,7 +6,7 @@ desc_ru="Компилятор и инструменты для языка про
 homepage="https://go.dev/"
 maintainer='Elara Musayelyan <elara@elara.ws>'
 maintainer_ru='Элара Мусаелян <elara@elara.ws>'
-architectures=('amd64' 'arm64' 'arm6' '386')
+architectures=('amd64' 'arm64' 'arm6' '386' 'riscv64')
 license=('BSD-3-Clause')
 provides=('go' 'golang')
 conflicts=('go' 'golang' 'golang-bin' 'golang-go')
@@ -22,6 +22,9 @@ checksums_arm6=('%s')
 
 sources_386=("https://dl.google.com/go/go${version}.linux-386.tar.gz")
 checksums_386=('%s')
+
+sources_riscv64=("https://dl.google.com/go/go${version}.linux-riscv64.tar.gz")
+checksums_riscv64=('%s')
 
 package() {
 	mkdir -p "$pkgdir/usr/lib/" "$pkgdir/usr/bin"
