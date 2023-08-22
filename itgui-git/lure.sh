@@ -2,7 +2,9 @@ name='itgui-git'
 version='99.08113c2'
 release=1
 desc='GUI client for ITD'
-homepage='https://gitea.arsenm.dev/Arsen6331/itd'
+homepage='https://gitea.elara.ws/Elara6331/itd'
+maintainer='Elara Musayelyan <elara@elara.ws>'
+maintainer_ru='Элара Мусаелян <elara@elara.ws>'
 architectures=('amd64' 'arm64' 'arm7' 'arm6' '386')
 license=('GPL-3.0-or-later')
 provides=('itgui')
@@ -20,7 +22,7 @@ deps_alpine=('libxcursor' 'libxrandr' 'libxinerama' 'libxi' 'mesa-gl')
 deps_opensuse=('libXcursor1' 'libXrandr2' 'libXinerama1' 'libXi6' 'Mesa-libGL1')
 deps_fedora=('libXcursor' 'libXrandr' 'libXinerama' 'libXi' 'mesa-libGL')
 
-sources=("git+https://gitea.arsenm.dev/Arsen6331/itd.git")
+sources=("git+https://gitea.elara.ws/Elara6331/itd.git")
 checksums=('SKIP')
 
 backup=('/etc/itd.toml')

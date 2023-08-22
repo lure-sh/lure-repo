@@ -1,8 +1,10 @@
 name='lure-git'
-version='88.d32437e'
+version='277.d144a7f'
 release=1
 desc='Linux User REpository'
-homepage='https://gitea.arsenm.dev/Arsen6331/lure'
+homepage='https://gitea.elara.ws/Elara6331/lure'
+maintainer='Elara Musayelyan <elara@elara.ws>'
+maintainer_ru='Элара Мусаелян <elara@elara.ws>'
 architectures=('amd64' 'arm64' 'arm7' 'arm6' '386' 'riscv64')
 license=('GPL-3.0-or-later')
 provides=('lure')
@@ -13,7 +15,7 @@ build_deps_arch=('go')
 build_deps_alpine=('go')
 build_deps_opensuse=('go')
 
-sources=("git+https://gitea.arsenm.dev/Arsen6331/lure.git")
+sources=("git+https://gitea.elara.ws/Elara6331/lure.git")
 checksums=('SKIP')
 
 version() {
@@ -21,9 +23,14 @@ version() {
 	git-version
 }
 
+prepare() {
+	cd "$srcdir/lure"
+	git-version > internal/config/version.txt
+}
+
 build() {
 	cd "$srcdir/lure"
-	go build
+	CGO_ENABLED=0 go build
 }
 
 package() {
