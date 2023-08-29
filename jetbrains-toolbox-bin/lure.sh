@@ -1,5 +1,5 @@
 name='jetbrains-toolbox-bin'
-version='1.27.3.14493'
+version='2.0.2.16660'
 release='1'
 desc='Manage all your JetBrains Projects and Tools'
 homepage='https://www.jetbrains.com/toolbox/'
