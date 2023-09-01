@@ -14,7 +14,7 @@ deps=('gconf-service' 'gconf2-common' 'libc++1' 'libxtst6' 'libxss1' 'libstdc++6
 deps_fedora=('libatomic' 'glibc' 'alsa-lib' 'GConf2' 'libnotify' 'nspr' 'nss' 'libstdc++' 'libX11' 'libXtst' 'libappindicator-gtk3' 'libXScrnSaver')
 deps_opensuse=('libatomic1' 'glibc' 'alsa' 'gconf2' 'libnotify' 'mozilla-nspr' 'mozilla-nss' 'libstdc++6' 'libX11' 'libXtst' 'libappindicator' 'libc++1' 'libXScrnSaver')
 deps_arch=('libnotify' 'libxss' 'nspr' 'nss' 'gtk3' 'libpulse' 'libappindicator-gtk3' 'xdg-utils')
-
+deps_rosa=('libatomic' 'glibc' 'alsa-lib' 'GConf2' 'libnotify' 'nspr' 'nss' 'libstdc++' 'libX11' 'libXtst' 'libappindicator1' 'libXScrnSaver')
 
 sources=("https://dl.discordapp.net/apps/linux/0.0.29/discord-0.0.29.tar.gz")
 checksums=('SKIP')
