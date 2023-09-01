@@ -1,6 +1,6 @@
 name='discord-bin'
-version='0.0.28'
-release='2'
+version='0.0.29'
+release='1'
 desc='All-in-one voice and text chat for gamers'
 homepage='https://discord.com/'
 maintainer='Elara Musayelyan <elara@elara.ws>'
@@ -16,7 +16,7 @@ deps_opensuse=('libatomic1' 'glibc' 'alsa' 'gconf2' 'libnotify' 'mozilla-nspr' '
 deps_arch=('libnotify' 'libxss' 'nspr' 'nss' 'gtk3' 'libpulse' 'libappindicator-gtk3' 'xdg-utils')
 
 
-sources=("https://dl.discordapp.net/apps/linux/0.0.28/discord-0.0.28.tar.gz")
+sources=("https://dl.discordapp.net/apps/linux/0.0.29/discord-0.0.29.tar.gz")
 checksums=('SKIP')
 
 package() {
