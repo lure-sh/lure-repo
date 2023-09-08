@@ -16,7 +16,7 @@ sources=("git+https://github.com/karlstav/cava.git")
 checksums=('SKIP')
 
 version() {
-	cd "$srcdir"
+	cd "$srcdir/cava"
 	git-version
 }
 
