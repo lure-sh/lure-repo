@@ -13,9 +13,8 @@ build_deps=("build-essential" "libfftw3-dev" "libasound2-dev" "libncursesw5-dev"
 build_deps_arch=("base-devel" "fftw" "ncurses" "alsa-lib" "iniparser" "autoconf-archive" "pkgconf")
 build_deps_artix=("base-devel" "fftw" "ncurses" "alsa-lib" "iniparser" "autoconf-archive" "pkgconf")
 build_deps_opensuse=("alsa-devel" "ncurses-devel" "fftw3-devel" "libpulse-devel" "libtool" "autoconf-archive" "pkgconf")
-sources=("git+https://github.com/karlstav/cava.git?~rev=v${version}")
+sources=("git+https://github.com/karlstav/cava.git?~rev=${version}")
 checksums=('SKIP')
-
 
 build() {
     cd "$srcdir/cava"
@@ -25,5 +24,5 @@ build() {
 }
 
 package() {
-install-binary "${srcdir}/cava/cava"
+    install-binary "${srcdir}/cava/cava"
 }
