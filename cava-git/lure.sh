@@ -1,5 +1,5 @@
-name='cava'
-version='0.9.1'
+name='cava-git'
+version='0'
 release='1'
 desc='Cross-platform Audio Visualizer'
 homepage='https://github.com/karlstav/cava'
@@ -13,9 +13,13 @@ build_deps=("build-essential" "libfftw3-dev" "libasound2-dev" "libncursesw5-dev"
 build_deps_arch=("base-devel" "fftw" "ncurses" "alsa-lib" "iniparser" "autoconf-archive" "pkgconf")
 build_deps_artix=("base-devel" "fftw" "ncurses" "alsa-lib" "iniparser" "autoconf-archive" "pkgconf")
 build_deps_opensuse=("alsa-devel" "ncurses-devel" "fftw3-devel" "libpulse-devel" "libtool" "autoconf-archive" "pkgconf")
-sources=("git+https://github.com/karlstav/cava.git#tag=v${version}")
+sources=("git+https://github.com/karlstav/cava.git")
 checksums=('SKIP')
 
+version() {
+	cd "$srcdir/cava"
+	git-version
+}
 
 build() {
     cd "$srcdir/cava"
