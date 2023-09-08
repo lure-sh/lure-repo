@@ -6,7 +6,7 @@ homepage='https://github.com/mvdan/sh'
 maintainer="Elara Musayelyan <elara@elara.ws>"
 maintainer_ru='Элара Мусаелян <elara@elara.ws>'
 architectures=('amd64' 'arm64' 'arm' '386' 'riscv64')
-license=('BSD-3-Clause license')
+license=('BSD-3-Clause')
 provides=('shfmt')
 conflicts=('shtmt')
 
