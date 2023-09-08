@@ -21,6 +21,7 @@ version() {
 }
 
 build() {
+    cd "$srcdir/cava"
     ./autogen.sh
     ./configure
     make
