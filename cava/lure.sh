@@ -25,5 +25,5 @@ build() {
 }
 
 package() {
-	install -Dm755 "${srcdir}/cava/cava" "${pkgdir}/usr/bin/cava"
+install-binary "${srcdir}/cava/cava"
 }
