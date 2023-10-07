@@ -1,5 +1,5 @@
 name='linux-user-repository-git'
-version='328.7598122'
+version='333.0c6cdad'
 release=1
 desc='Linux User REpository'
 homepage='https://lure.sh'
@@ -23,19 +23,14 @@ version() {
 	git-version
 }
 
-prepare() {
-	cd "$srcdir/lure"
-	git-version > internal/config/version.txt
-}
-
 build() {
 	cd "$srcdir/lure"
-	CGO_ENABLED=0 go build
+	CGO_ENABLED=0 go build -ldflags="-X 'go.elara.ws/lure/internal/config.Version=$version'"
 }
 
 package() {
 	cd "$srcdir/lure"
-	install -Dm755 lure ${pkgdir}/usr/bin/lure
-	install -Dm755 ./scripts/completion/bash ${pkgdir}/usr/share/bash-completion/completions/lure
-	install -Dm755 ./scripts/completion/zsh ${pkgdir}/usr/share/zsh/site-functions/_lure
+	install-binary lure
+	install-completion bash lure < scripts/completion/bash
+	install-completion zsh lure < scripts/completion/zsh 
 }
