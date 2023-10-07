@@ -1,21 +1,21 @@
-name='lure-git'
-version='277.d144a7f'
+name='linux-user-repository-git'
+version='328.7598122'
 release=1
 desc='Linux User REpository'
-homepage='https://gitea.elara.ws/Elara6331/lure'
+homepage='https://lure.sh'
 maintainer='Elara Musayelyan <elara@elara.ws>'
 maintainer_ru='Элара Мусаелян <elara@elara.ws>'
 architectures=('amd64' 'arm64' 'arm7' 'arm6' '386' 'riscv64')
 license=('GPL-3.0-or-later')
-provides=('lure')
-conflicts=('lure')
+provides=('linux-user-repository')
+conflicts=('linux-user-repository' 'linux-user-repository-bin' 'linux-user-repository-git')
 
 build_deps=('golang')
 build_deps_arch=('go')
 build_deps_alpine=('go')
 build_deps_opensuse=('go')
 
-sources=("git+https://gitea.elara.ws/Elara6331/lure.git")
+sources=("git+https://gitea.elara.ws/lure/lure.git")
 checksums=('SKIP')
 
 version() {
