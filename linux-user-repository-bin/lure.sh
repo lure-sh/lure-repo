@@ -1,5 +1,5 @@
 name='linux-user-repository-bin'
-version=0.1.0
+version=0.1.1
 release=1
 desc='Linux User REpository'
 homepage='https://lure.sh'
