@@ -1,5 +1,5 @@
 name='hyfetch'
-version='1.4.10'
+version='1.4.11'
 release='1'
 desc='Neofetch with LGBTQ+ pride flags'
 homepage='https://github.com/hykilpikonna/hyfetch'
@@ -19,7 +19,7 @@ build_deps_arch=("python" "python-setuptools" "python-typing_extensions")
 build_deps_alpine=("python3" "py3-setuptools" "py3-typing-extensions")
 
 sources=("https://files.pythonhosted.org/packages/source/H/HyFetch/HyFetch-${version}.tar.gz")
-checksums=('blake2b-256:bf0413a5091a1da014fad160710abfad2aa03a72bc41e4678c95be2b5ee67818')
+checksums=('blake2b-256:bbaf0c4590b16c84073bd49b09ada0756fd9bd75b072e3ba9aec73101f0cc9f4')
 
 build() {
 	cd "$srcdir/HyFetch-${version}"
