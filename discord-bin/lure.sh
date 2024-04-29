@@ -1,5 +1,5 @@
 name='discord-bin'
-version='0.0.51'
+version='0.0.52'
 release='1'
 desc='All-in-one voice and text chat for gamers'
 homepage='https://discord.com/'
@@ -16,7 +16,7 @@ deps_opensuse=('libatomic1' 'glibc' 'alsa' 'gconf2' 'libnotify' 'mozilla-nspr' '
 deps_arch=('libnotify' 'libxss' 'nspr' 'nss' 'gtk3' 'libpulse' 'libappindicator-gtk3' 'xdg-utils')
 deps_rosa=('libatomic' 'glibc' 'alsa-lib' 'GConf2' 'libnotify' 'nspr' 'nss' 'libstdc++' 'libX11' 'libXtst' 'libappindicator1' 'libXScrnSaver')
 
-sources=("https://dl.discordapp.net/apps/linux/0.0.51/discord-0.0.51.tar.gz")
+sources=("https://dl.discordapp.net/apps/linux/0.0.52/discord-0.0.52.tar.gz")
 checksums=('SKIP')
 
 package() {
