@@ -7,7 +7,8 @@ maintainer='Atirut Wattanamongkol <atirut.wattanamongkol@gmail.com>'
 architectures=('amd64')
 license=('GPL-2.0-only')
 
-build_deps_fedora=('gmp-devel' 'mpfr-devel' 'texinfo')
+deps=('gmp' 'mpfr')
+build_deps_fedora=('gmp-devel' 'mpfr-devel' 'texinfo' 'make' 'gcc' 'perl' 'bison')
 
 sources=('https://ftp.gnu.org/gnu/binutils/binutils-2.42.tar.xz')
 checksums=('SKIP')
