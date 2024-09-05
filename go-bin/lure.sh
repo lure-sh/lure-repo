@@ -1,5 +1,5 @@
 name="go-bin"
-version=1.23.0
+version=1.23.1
 release=1
 desc="Compiler and tools for the Go programming language"
 desc_ru="Компилятор и инструменты для языка программирования Go"
@@ -12,19 +12,19 @@ provides=('go' 'golang')
 conflicts=('go' 'golang' 'golang-bin' 'golang-go')
 
 sources_amd64=("https://dl.google.com/go/go${version}.linux-amd64.tar.gz")
-checksums_amd64=('905a297f19ead44780548933e0ff1a1b86e8327bb459e92f9c0012569f76f5e3')
+checksums_amd64=('49bbb517cfa9eee677e1e7897f7cf9cfdbcf49e05f61984a2789136de359f9bd')
 
 sources_arm64=("https://dl.google.com/go/go${version}.linux-arm64.tar.gz")
-checksums_arm64=('62788056693009bcf7020eedc778cdd1781941c6145eab7688bd087bce0f8659')
+checksums_arm64=('faec7f7f8ae53fda0f3d408f52182d942cc89ef5b7d3d9f23ff117437d4b2d2f')
 
 sources_arm6=("https://dl.google.com/go/go${version}.linux-armv6l.tar.gz")
-checksums_arm6=('0efa1338e644d7f74064fa7f1016b5da7872b2df0070ea3b56e4fef63192e35b')
+checksums_arm6=('6c7832c7dcd8fb6d4eb308f672a725393403c74ee7be1aeccd8a443015df99de')
 
 sources_386=("https://dl.google.com/go/go${version}.linux-386.tar.gz")
-checksums_386=('0e8a7340c2632e6fb5088d60f95b52be1f8303143e04cd34e9b2314fafc24edd')
+checksums_386=('cdee2f4e2efa001f7ee75c90f2efc310b63346cfbba7b549987e9139527c6b17')
 
 sources_riscv64=("https://dl.google.com/go/go${version}.linux-riscv64.tar.gz")
-checksums_riscv64=('a87726205f1a283247f877ccae8ce147ff4e77ac802382647ac52256eb5642c7')
+checksums_riscv64=('1a4a609f0391bea202d9095453cbfaf7368fa88a04c206bf9dd715a738664dc3')
 
 package() {
 	mkdir -p "$pkgdir/usr/lib/" "$pkgdir/usr/bin"
