@@ -1,6 +1,6 @@
 name='binutils-z80'
-version='2.42'
-release='2'
+version='2.43'
+release='1'
 desc='Cross-build binary utilities for z80'
 homepage='https://www.gnu.org/software/binutils/'
 maintainer='Atirut Wattanamongkol <atirut.wattanamongkol@gmail.com>'
@@ -10,23 +10,23 @@ license=('GPL-2.0-only')
 deps=('gmp' 'mpfr')
 build_deps_fedora=('gmp-devel' 'mpfr-devel' 'texinfo' 'make' 'gcc' 'perl' 'bison')
 
-sources=('https://ftp.gnu.org/gnu/binutils/binutils-2.42.tar.xz')
+sources=('https://ftp.gnu.org/gnu/binutils/binutils-2.43.tar.xz')
 checksums=('SKIP')
 
 prepare() {
-	cd "$srcdir/binutils-2.42"
+	cd "$srcdir/binutils-2.43"
 	# Turn off dev mode (very strict compiler flags)
 	sed -i '/^development=/s/true/false/' bfd/development.sh
 }
 
 build() {
-	cd "$srcdir/binutils-2.42"
+	cd "$srcdir/binutils-2.43"
 	./configure --target=z80-elf --prefix=/usr
 	make -j$NCPU
 }
 
 package() {
-	cd "$srcdir/binutils-2.42"
+	cd "$srcdir/binutils-2.43"
 	make DESTDIR="$pkgdir" install
 
 	# Clean up conflicting files
