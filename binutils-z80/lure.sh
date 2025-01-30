@@ -1,6 +1,6 @@
 name='binutils-z80'
 version='2.42'
-release='1'
+release='2'
 desc='Cross-build binary utilities for z80'
 homepage='https://www.gnu.org/software/binutils/'
 maintainer='Atirut Wattanamongkol <atirut.wattanamongkol@gmail.com>'
@@ -31,6 +31,7 @@ package() {
 
 	# Clean up conflicting files
 	rm -r "$pkgdir/usr/lib/"
+	rm -r "$pkgdir/usr/lib64/"
 	rm -r "$pkgdir/usr/share/info/"
 	rm -r "$pkgdir/usr/share/locale/"
 }
