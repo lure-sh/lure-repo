@@ -22,7 +22,7 @@ prepare() {
 build() {
 	cd "$srcdir/binutils-2.42"
 	./configure --target=z80-elf --prefix=/usr
-	make -j$(NCPU)
+	make -j$NCPU
 }
 
 package() {
