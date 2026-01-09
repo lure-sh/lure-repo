@@ -1,0 +1,20 @@
+# Built packages
+*.deb
+*.rpm
+*.pkg.tar.*
+*.apk
+
+# LURE build artifacts
+*.tar.gz
+*.tar.xz
+*.tar.zst
+
+# Editor backups
+*~
+*.swp
+*.swo
+.*.swp
+
+# OS files
+.DS_Store
+Thumbs.db
