@@ -1,0 +1,19 @@
+# LURE build artifacts
+*.deb
+*.rpm
+*.pkg.tar.zst
+*.pkg.tar.xz
+
+# Build directories
+build/
+dist/
+
+# Editor files
+*~
+*.swp
+*.swo
+.*.swp
+
+# OS files
+.DS_Store
+Thumbs.db
